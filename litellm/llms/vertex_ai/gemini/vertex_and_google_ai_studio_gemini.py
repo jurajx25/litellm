@@ -1307,6 +1307,7 @@ class VertexGeminiConfig(VertexAIBaseConfig, BaseConfig):
             delta=Delta(
                 content=chat_completion_message.get("content"),
                 reasoning_content=chat_completion_message.get("reasoning_content"),
+                thinking_blocks=chat_completion_message.get("thinking_blocks"),
                 tool_calls=tools,
                 images=image_response,
                 function_call=functions,
